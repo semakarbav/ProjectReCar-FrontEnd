@@ -1,0 +1,43 @@
+<br>
+<h3>KİRALANAN ARABA BİLGİLERİ</h3>
+<table   class="table">
+    
+    <thead>
+        <tr>
+          
+            <th>Şirket Adı </th>
+            <th>Adı </th>
+            <th>Soyadı</th>
+            <th>Email</th>
+            <th>Araba Adı</th>
+            <th>Marka</th>
+            <th>Renk</th>
+            <th>Model Yılı</th>
+            <th>Günlük Fiyat</th>
+            <th>Kiralanma Tarihi</th>
+            <th>Teslim Tarihi</th>
+            
+        </tr>
+       
+    </thead>
+    <tr *ngFor="let rental of rentals">
+       
+        <td>{{rental.companyName}}</td>
+        <td>{{rental.firstName}}</td>
+        <td>{{rental.lastName}}</td>
+        <td>{{rental.email}}</td>
+        <td>{{rental.carName}}</td>
+        <td>{{rental.brandName}}</td>
+        <td>{{rental.colorName}}</td>
+        <td>{{rental.modelYear}}</td>
+        <td>{{rental.dailyPrice}}</td>
+        <td>{{rental.rentDate}}</td>
+        <td>{{rental.returnDate}}</td>
+        
+
+       
+
+    </tr>
+</table>
+
+
